@@ -1,0 +1,25 @@
+{
+  "name": "technical_test_template",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.10",
+    "drizzle-kit": "^0.31.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.93.5",
+    "@effect/platform-bun": "^0.85.0",
+    "@effect/platform-node": "^0.102.0",
+    "bcrypt": "^6.0.0",
+    "drizzle-orm": "^0.44.7",
+    "effect": "^3.19.8",
+    "jsonwebtoken": "^9.0.2",
+    "postgres": "^3.4.7"
+  }
+}
