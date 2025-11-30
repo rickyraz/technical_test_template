@@ -1,7 +1,7 @@
 import { Context, Effect, Option, Layer } from 'effect';
 import { eq } from 'drizzle-orm';
 import { DatabaseConnection } from '../../shared/db/connection';
-import { usersTable } from './UserTable';
+import { usersTable } from './user.table';
 import { DatabaseError } from '../../shared/errors/AppErrors';
 import {
     BaseUser,
@@ -10,9 +10,9 @@ import {
     type UserByRole,
     UpdateUserProfile,
     UpdateSensitiveData,
-} from '../domain/User';
-import { RoleName } from '../../auth/domain/Role';
-import { UserMapper } from './UserMapper';
+} from '../domain/user.schema';
+import { RoleName } from '../../auth/domain/role.schema';
+import { UserMapper } from './user.mappers';
 
 /**
  * UserRepository - Infrastructure Layer

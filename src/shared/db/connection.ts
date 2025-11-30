@@ -1,8 +1,8 @@
 import { Context, Effect, Layer } from 'effect';
 import { DatabaseClient } from './client';
-import { RoleName } from '../../auth/domain/Role';
+import { RoleName } from '../../auth/domain/role.schema';
 import type { drizzle } from 'drizzle-orm/postgres-js';
-import type * as schema from '../../user/infrastructure/UserTable';
+import type * as schema from '../../user/infrastructure/user.table';
 
 export interface SessionContext {
     readonly userId: string | null;

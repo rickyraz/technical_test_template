@@ -1,5 +1,5 @@
 import { Schema } from 'effect';
-import { RoleName } from '../../auth/domain/Role';
+import { RoleName } from '../../auth/domain/role.schema';
 
 // Domain: User Entity (Source of Truth)
 // This represents the business domain, NOT the database structure

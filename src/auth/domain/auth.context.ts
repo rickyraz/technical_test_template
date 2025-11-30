@@ -1,6 +1,6 @@
 import { Context, Data } from 'effect';
 import { Schema } from 'effect';
-import { RoleName } from './Role';
+import { RoleName } from './role.schema';
 
 export class AuthContext extends Schema.Class<AuthContext>('AuthContext')({
     userId: Schema.UUID,
@@ -12,6 +12,3 @@ export class AuthContextService extends Context.Tag('AuthContextService')
         AuthContext
     >() { }
 
-export class AuthenticationError extends Data.TaggedError('AuthenticationError')<{
-    readonly message: string;
-}> { }

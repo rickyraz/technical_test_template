@@ -1,5 +1,5 @@
 import { Effect } from "effect";
-import { measured, viewMetrics } from "./src/shared/infra/metrics/Metrics";
+import { measured, viewMetrics } from "./src/shared/infra/metrics/metric";
 
 console.log("Hello via Bun!");
 

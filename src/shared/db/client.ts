@@ -1,7 +1,7 @@
 import postgres from 'postgres';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import { Config, Effect, Layer } from "effect";
-import * as schema from '../../user/infrastructure/UserTable';
+import * as schema from '../../user/infrastructure/user.table';
 
 export interface PostgresConfig {
     readonly host: string;

@@ -1,9 +1,9 @@
 import { Config, Context, Effect, Layer } from 'effect';
 import * as jwt from 'jsonwebtoken';
 import * as bcrypt from 'bcrypt';
-import { UserRepository } from '../../user/infrastructure/UserRepository';
-import { AuthenticationError } from '../domain/AuthContext';
-import { DatabaseError } from '../../shared/errors/AppErrors';
+import { UserRepository } from '../../user/infrastructure/user.repository';
+import type { DatabaseError } from '../../shared/errors/infrastructure.errors';
+import { AuthenticationError } from '../domain/auth.errors';
 
 export class AuthService extends Context.Tag('AuthService')
     <AuthService,

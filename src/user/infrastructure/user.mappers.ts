@@ -1,7 +1,7 @@
 import { Effect, Schema } from 'effect';
-import { BaseUser, FullUser, UserWithPassword } from '../domain/User';
-import { RoleName } from '../../auth/domain/Role';
-import type { UserRow } from './UserTable';
+import { BaseUser, FullUser, UserWithPassword } from '../domain/user.schema';
+import { RoleName } from '../../auth/domain/role.schema';
+import type { UserRow } from './user.table';
 import { DatabaseError } from '../../shared/errors/AppErrors';
 
 /**

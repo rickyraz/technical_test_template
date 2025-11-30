@@ -5,7 +5,7 @@ import {
     HttpApiGroup,
     OpenApi,
 } from '@effect/platform';
-import { BaseUser, FullUser, UpdateUserProfile, UpdateSensitiveData } from '../../domain/User';
+import { BaseUser, FullUser, UpdateUserProfile, UpdateSensitiveData } from '../../domain/user.schema';
 import { Schema } from 'effect';
 
 // Api = contract/spec → tidak ada logic

@@ -5,8 +5,9 @@ import {
 } from '@effect/platform';
 import { Schema } from 'effect';
 import * as jwt from 'jsonwebtoken';
-import { AuthContext, AuthContextService, AuthenticationError } from '../../auth/domain/AuthContext';
-import { UserRepository } from '../../user/infrastructure/UserRepository';
+import { AuthContext, AuthContextService, } from '../../auth/domain/auth.context';
+import { UserRepository } from '../../user/infrastructure/user.repository';
+import { AuthenticationError } from '../../auth/domain/auth.errors';
 
 interface JWTPayload {
     userId: string;

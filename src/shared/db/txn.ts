@@ -1,6 +1,6 @@
 import type postgres from "postgres";
-import { DatabaseError } from "../errors/AppErrors";
 import { Effect } from "effect";
+import { DatabaseError } from "../errors/infrastructure.errors";
 
 //  transaction function typically state-less.
 export const withTransaction = <R, E = never, Env extends never = never>(

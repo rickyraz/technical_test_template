@@ -1,17 +1,18 @@
 import { Context, Effect, Option, Layer } from 'effect';
-import { UserRepository } from '../infrastructure/UserRepository';
+import { UserRepository } from '../infrastructure/user.repository';
 import {
     UnauthorizedError,
     ForbiddenError,
-    NotFoundError,
-    DatabaseError,
-} from '../../shared/errors/AppErrors';
+} from '../../shared/errors/application.errors';
+import { NotFoundError } from '../../shared/errors/domain.errors';
+
+import { DatabaseError } from '../../shared/errors/infrastructure.errors';
 import {
     type UserByRole,
     UpdateUserProfile,
     UpdateSensitiveData,
-} from '../domain/User';
-import { RoleName } from '../../auth/domain/Role';
+} from '../domain/user.schema';
+import { RoleName } from '../../auth/domain/role.schema';
 
 export class UserService extends Context.Tag('UserService')
     <UserService,

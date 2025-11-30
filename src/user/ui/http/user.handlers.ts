@@ -1,9 +1,9 @@
 import { Effect } from 'effect';
 import { HttpApiBuilder } from '@effect/platform';
-import { UserApi } from './UserApi';
-import { UserService } from '../../application/UserService';
-import { AuthContextService } from '../../../auth/domain/AuthContext';
-import { withAuth } from '../../../shared/middleware/AuthMiddleware';
+import { UserApi } from './user.api';
+import { UserService } from '../../application/user.service';
+import { AuthContextService } from '../../../auth/domain/auth.context';
+import { withAuth } from '../../../shared/middleware/auth.middleware';
 
 // Handlers = implementation → memanggil use-case
 

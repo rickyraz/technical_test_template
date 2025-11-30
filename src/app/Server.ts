@@ -1,8 +1,8 @@
 import { Effect, Layer } from 'effect';
 import { HttpApiBuilder } from '@effect/platform';
-import { AppLayer } from './AppLayer';
+import { AppLayer } from './app.layer';
 import { BunRuntime, BunHttpServer } from "@effect/platform-bun"
-import { UserApi } from '../user/ui/http/UserApi';
+import { UserApi } from '../user/ui/http/user.api';
 
 
 const ServerLive = BunHttpServer.layer({ port: 3000 });
